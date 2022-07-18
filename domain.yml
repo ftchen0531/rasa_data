@@ -1,6 +1,6 @@
 version: "3.1"
 
-- intents:
+intents:
   - praise_for_event
   - praise_for_sth
   - praise_for_people
