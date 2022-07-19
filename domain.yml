@@ -3,7 +3,9 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - specific_praise
+  - specific_praise_event
+  - specific_praise_sth
+  - specific_praise_others
   - random_praise
 entities:
   - verb
@@ -19,7 +21,7 @@ slots:
     mappings:
     - type: from_entity
       entity: verb
-      intent: specific_praise
+      intent: specific_praise_event
       not applied: random_praise
   event_object:
     type: any
@@ -27,15 +29,15 @@ slots:
     mappings:
     - type: from_entity
       entity: object
-      intent: specific_praise
-      not applied: random_praise   
+      intent: specific_praise_event
+      not applied: random_praise
   event_adv:
     type: any
     influence_conversation: false
     mappings:
     - type: from_entity
       entity: adv
-      intent: specific_praise
+      intent: specific_praise_event
       not applied: random_praise
   object_sth:
     type: any
@@ -43,7 +45,7 @@ slots:
     mappings:
     - type: from_entity
       entity: sth
-      intent: specific_praise
+      intent: specific_praise_sth
       not applied: random_praise
   object_others:
     type: any
@@ -51,7 +53,7 @@ slots:
     mappings:
     - type: from_entity
       entity: others
-      intent: specific_praise
+      intent: specific_praise_others
       not applied: random_praise
   
 responses:
