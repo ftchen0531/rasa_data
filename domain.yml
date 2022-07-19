@@ -1,11 +1,38 @@
 version: "3.1"
 
 intents:
-  - praise_for_event
-  - praise_for_sth
-  - praise_for_people
+  - specific_praise
+  - random_praise
+entities:
+  - event
+  - sth
+  - others
+
+slots:
+  objects_event:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: event
+      intent: specific_praise
+      not applied: random_praise
   
 responses:
+  utter_random_praise:
+    - text: "你是最棒的！"
+    - text: "哇你今天真好看！"
+    - text: "好棒！！！"
+    - text: "太强了"
+    - text: "哇！太厉害啦∠(｀ω′*)"
+    - text: ""
+  
+  utter_specific_praise:
+    - text: "从哪里开始夸你呢，嗯。。。你真的做的太棒了！！"
+    - text: "能做到{object_event}真是太了不起啦！ "
+    - text: "哇，{object_event}， 我太佩服你了！"
+    - text: "你也太有勇气了！"
+  
   utter_praise_for_event:
     - text: "好棒！！！"
     - text: "太强了"
