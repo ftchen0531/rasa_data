@@ -4,33 +4,33 @@ intents:
   - specific_praise
   - random_praise
 entities:
-  - event
-  - sth
-  - others
+  - verb
+  - object
+  - adv
 
 slots:
-  objects_event:
+  event_verb:
     type: any
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: event
+      entity: verb
       intent: specific_praise
       not applied: random_praise
-  object_sth:
+  event_object:
     type: any
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: sth
+      entity: object
       intent: specific_praise
       not applied: random_praise   
-  object_people:
+  event_adv:
     type: any
     influence_conversation: false
     mappings:
     - type: from_entity
-      entity: sth
+      entity: adv
       intent: specific_praise
       not applied: random_praise
   
@@ -45,9 +45,9 @@ responses:
     - text: "我觉得你今天很特别耶，特别可爱。"
   
   utter_specific_praise:
-    - text: "从哪里开始夸你呢，嗯。。。你真的做的太棒了！！"
-    - text: "能做到{object_event}真是太了不起啦！ "
-    - text: "哇，{object_event}， 我太佩服你了！"
+    - text: "从哪里开始夸你呢，嗯。。。{event_adv}{event_verb}{event_object}太棒了！！"
+    - text: "{event_adv}{event_verb}{event_object}真是太了不起啦！ "
+    - text: "哇，{event_adv}{event_verb}{event_object}， 我太佩服你了！"
     - text: "厉害了哇"
     - text: "哇哇哇哇，太棒了吧"
     - text: "{object_others}也太厉害了~"
