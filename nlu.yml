@@ -14,7 +14,8 @@ nlu:
     - 谢谢
     - 再见
     - 下次见
-- intent: specific_praise/event
+nlu:
+- intent: specific_praise_event
   examples: |
     - [减肥](verb)40斤了，还在继续减，求表扬（异性交友目的请不要私信）
     - 我[教](verb)[老年人](object)用智能手机，然后被央视报道了！
@@ -58,11 +59,11 @@ nlu:
     - 运动两周[轻](verb)了几斤好开心！
     - 第二次抓娃娃 十块钱[抓](verb)了三个[娃娃](object)
     - 四分钟娃娃机[抓](verb)了两个[娃娃](object) 可以夸夸我吗？
-- intent: specific_praise/sth
+- intent: specific_praise_sth
   examples: |
     - 可以夸一下我做的[海报](sth)和包装设计吗！谢谢家人们
     - [日记](sth)，求夸
-- intent: specific_praise/others
+- intent: specific_praise_others
   examples: |
     - 亲[弟弟](others)高考考了691分全省138名，求表扬！
     - 比较奇葩的[90后](others)
