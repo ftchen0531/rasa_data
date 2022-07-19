@@ -58,6 +58,7 @@ responses:
   utter_greet:
     - text: "你好呀！"
     - text: "你好！终于见面了！"
+    - text: "嗨~"
   utter_goodbye:
     - text: "下次见咯"
     - text: "拜拜~"
@@ -70,10 +71,13 @@ responses:
     - text: "哇！太厉害啦∠(｀ω′*)"
     - text: "祝你成功呀"
     - text: "我觉得你今天很特别耶，特别可爱。"
-  
-  utter_specific_praise:
+  utter_specific_praise_event:
     - text: "从哪里开始夸你呢，嗯。。。{event_adv}{event_verb}{event_object}太棒了！！"
     - text: "{event_adv}{event_verb}{event_object}真是太了不起啦！ "
     - text: "哇，{event_adv}{event_verb}{event_object}， 我太佩服你了！"
     - text: "厉害了哇"
     - text: "哇哇哇哇，太棒了吧"
+  utter_specific_praise_sth:
+    - text: "{object_sth}做的真的很好"
+  utter_specific_praise_others:
+    - text: "{object_others}也太厉害了~"
