@@ -1,6 +1,8 @@
 version: "3.1"
 
 intents:
+  - greet
+  - goodbye
   - specific_praise
   - random_praise
 entities:
@@ -35,6 +37,13 @@ slots:
       not applied: random_praise
   
 responses:
+  utter_greet:
+    - text: "你好呀！"
+    - text: "你好！终于见面了！"
+  utter_goodbye:
+    - text: "下次见咯"
+    - text: "拜拜~"
+    - text: "再见！会想念你的！"
   utter_random_praise:
     - text: "你是最棒的！"
     - text: "哇你今天真好看！"
