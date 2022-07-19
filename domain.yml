@@ -74,12 +74,12 @@ responses:
     - text: "祝你成功呀"
     - text: "我觉得你今天很特别耶，特别可爱。"
   utter_specific_praise_event:
-    - text: "从哪里开始夸你呢，嗯。。。{event_adv}{event_verb}{event_object}太棒了！！"
-    - text: "{event_adv}{event_verb}{event_object}真是太了不起啦！ "
-    - text: "哇，{event_adv}{event_verb}{event_object}， 我太佩服你了！"
+    - text: "从哪里开始夸你呢，嗯。。。{adv}{verb}{object}太棒了！！"
+    - text: "{adv}{verb}{object}真是太了不起啦！ "
+    - text: "哇，{adv}{verb}{object}， 我太佩服你了！"
     - text: "厉害了哇"
     - text: "哇哇哇哇，太棒了吧"
   utter_specific_praise_sth:
-    - text: "{object_sth}做的真的很好"
+    - text: "{sth}做的真的很好"
   utter_specific_praise_others:
-    - text: "{object_others}也太厉害了~"
+    - text: "{others}也太厉害了~"
