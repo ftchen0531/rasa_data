@@ -9,6 +9,8 @@ entities:
   - verb
   - object
   - adv
+  - sth
+  - others
 
 slots:
   event_verb:
@@ -35,6 +37,22 @@ slots:
       entity: adv
       intent: specific_praise
       not applied: random_praise
+  object_sth:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: sth
+      intent: specific_praise
+      not applied: random_praise
+  object_others:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: others
+      intent: specific_praise
+      not applied: random_praise
   
 responses:
   utter_greet:
@@ -59,5 +77,3 @@ responses:
     - text: "哇，{event_adv}{event_verb}{event_object}， 我太佩服你了！"
     - text: "厉害了哇"
     - text: "哇哇哇哇，太棒了吧"
-    - text: "{object_others}也太厉害了~"
-    - text: "{object_sth}做的真的很好"
