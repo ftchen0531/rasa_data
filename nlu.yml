@@ -13,58 +13,62 @@ nlu:
 - intent: goodbye
   examples: |
     - 拜拜
+    - 谢谢
     - 再见
     - 下次见
-- intent: specific_praise_event_verb_object
+- intent: specific_praise_event
   examples: |
-    - 助学[贷款](object)已经[还完](verb)啦！两万四千多
-    - 一个人去医院，路上[提醒](verb)了一个[姐姐](object)
-    - 小red书暑假已经[涨了](verb)[4000粉](object)
-    - 闲置了半年，重新[拿起](verb)[画笔](object)
-    - 我[资助](verb)了一个贫困[学生](object)
-    - 我[收养](verb)了[流浪猫](object)！
+    - [减肥](verb)40斤了，还在继续减，求表扬（异性交友目的请不要私信）
     - 我[教](verb)[老年人](object)用智能手机，然后被央视报道了！
-    - 我[会](verb)[盲打](object)诶
-    - 晚上睡不着[做](verb)了个小[挂坠](object)
-    - 蛙泳能泳1km还[学会](verb)了[自由泳](object)啦！
-    - 提前[解决](verb)了[需求问题](object)
-    - 四分钟娃娃机[抓了](verb)两个[娃娃](object) 可以夸夸我吗？
-    - 求表扬|我[开始](verb)我的[副业](object)啦！
-    - 两天[读完](verb)了[两本书](object)
-    - 今天做翻译[收到](verb)[稿费](object)啦，可以夸夸我吗
     - 今天自己[洗了](verb)3条[被子](object)
-    - 今天[背了](verb)好多[单词](object)！求夸夸
-    - 工作四年半[攒了](verb)[二十万](object)
-    - 第二次抓娃娃 十块钱[抓了](verb)三个[娃娃](object)
-    - 成功向公司[要到了](verb)一整个暑假的[假期](object)，求表扬^_^
-    - 2个月[瘦了](verb)[10斤](object)
+    - 闲置了半年，重新[拿起](verb)[画笔](object)
+    - 小red书暑假已经[涨了](verb)[4000粉](object)
+    - 拒绝加班，从大厂[跑路](object)了
     - [做了](verb)一大锅[绿豆汤](object)，带了满满一壶冰镇的到单位
-    - [戒掉](verb)[手游](object)！掌声在哪里
-    - [减肥](verb)[40斤](object)了，还在继续减，求表扬（异性交友目的请不要私信）
-    - [得到](verb)国企神仙[职务](object)
-    - [背完](verb)4级[单词](object)，求表扬
-- intent: specific_praise_event_verb_adv
-  examples: |
-    - [要债](verb)[成功](adv)！哦耶
-    - 7月10号考试，现在[努力](adv)[看书](verb)
-    - 系统[练字](verb)[三个月](adv)！求一些夸夸
-    - 整个试场[面试](verb)[第一](adv)
-    - 系统[练字](verb)[三个月](adv)！求一些夸夸
-    - 几个月了我[每天](adv)都[发](verb)[微博](object)
-    - [要债](verb)[成功](adv)！哦耶
-    - 几个月了我[每天](adv)都[发微博](verb)
-- intent: specific_praise_event_verb
-  examples: |
-    - 运动两周[轻了](verb)几斤好开心！
-    - 晚上要去[摆摊](verb) 现在恐惧的身体要僵硬了
-    - 深夜多管闲事（[见义勇为](verb)）问女生要不要帮忙
-    - 求夸赞，工作八年[买房](verb)了，准备装修
-    - 拒绝加班，从大厂[跑路](verb)了
-    - 今年一直在抽时间[学习](verb)。
+    - 两天[读完](verb)了[两本书](object)
+    - 今天[背了](verb)好多[单词](object)！求夸夸
     - 很难起床，但努力[起床](verb)了
+    - 提前[解决了](verb)[需求问题](object)
+    - 助学[贷款](object)已经[还完](verb)啦！两万四千多
+    - 求夸赞，工作八年[买房](verb)了，准备装修
+    - [放假](verb)啦耶耶耶
+    - 我[资助](verb)了一个贫困[学生](object)
+    - 工作四年半[攒了](verb)[二十万](object)
+    - 蛙泳能泳1km还[学会](verb)了[自由泳](object)啦！
+    - 整个试场[面试](verb)[第一](adv)
+    - 一个人去医院，路上[提醒](verb)了一个[姐姐](object)
+    - 深夜多管闲事（[见义勇为](verb)）问女生要不要帮忙
+    - 求表扬|我[开始](verb)我的[副业](object)啦！
+    - 晚上要去[摆摊](verb) 现在恐惧的身体要僵硬了
+    - [要债](verb)[成功](adv)！哦耶
+    - [戒掉](verb)[手游](object)！掌声在哪里
+    - 成功向公司[要到了](verb)一整个暑假的[假期](object)，求表扬^_^
+    - [得到](verb)国企神仙[职务](object)
+    - 我[会](verb)[盲打](object)诶
+    - 我[收养](verb)了[流浪猫](object)！
+    - [背完](verb)4级[单词](object)，求表扬
+    - 7月10号考试，现在努力[看书](verb)
+    - 今天做翻译[收到](verb)[稿费](object)啦，可以夸夸我吗
     - 鼓起勇气[辞职](verb)了，重新开始生活
     - [戒酒](verb)戒烟地第二天
-    - [放假](verb)啦耶耶耶
+    - 几个月了我[每天](adv)都[发](verb)[微博](object)
+    - 晚上睡不着[做](verb)了个小[挂坠](object)
+    - 系统[练字](verb)[三个月](adv)！求一些夸夸
+    - 2个月[瘦](verb)了10斤
+    - 今年一直在抽时间[学习](verb)。
+    - 运动两周[轻](verb)了几斤好开心！
+    - 第二次抓娃娃 十块钱[抓了](verb)三个[娃娃](object)
+    - 四分钟娃娃机[抓了](verb)两个[娃娃](object) 可以夸夸我吗？
+- intent: specific_praise_sth
+  examples: |
+    - 可以夸一下我做的[海报](sth)和包装设计吗！谢谢家人们
+    - [日记](sth)，求夸
+- intent: specific_praise_others
+  examples: |
+    - 亲[弟弟](others)高考考了691分全省138名，求表扬！
+    - 比较奇葩的[90后](others)
+    - [我妈](others)超棒，60岁学会了开车
+    - 夸一下[儿子](others)，一定会考上自己喜欢的大学。
 - intent: random_praise
   examples: |
     - 近三年各方面失败，求安慰
