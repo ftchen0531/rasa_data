@@ -15,7 +15,7 @@ nlu:
     - 拜拜
     - 再见
     - 下次见
-- intent: specific_praise_event/verb_object
+- intent: specific_praise_event_verb_object
   examples: |
     - 助学[贷款](object)已经[还完](verb)啦！两万四千多
     - 一个人去医院，路上[提醒](verb)了一个[姐姐](object)
@@ -43,7 +43,7 @@ nlu:
     - [减肥](verb)[40斤](object)了，还在继续减，求表扬（异性交友目的请不要私信）
     - [得到](verb)国企神仙[职务](object)
     - [背完](verb)4级[单词](object)，求表扬
-- intent: specific_praise_event/verb_adv
+- intent: specific_praise_event_verb_adv
   examples: |
     - [要债](verb)[成功](adv)！哦耶
     - 7月10号考试，现在[努力](adv)[看书](verb)
@@ -53,7 +53,7 @@ nlu:
     - 几个月了我[每天](adv)都[发](verb)[微博](object)
     - [要债](verb)[成功](adv)！哦耶
     - 几个月了我[每天](adv)都[发微博](verb)
-- intent: specific_praise_event/verb
+- intent: specific_praise_event_verb
   examples: |
     - 运动两周[轻了](verb)几斤好开心！
     - 晚上要去[摆摊](verb) 现在恐惧的身体要僵硬了
