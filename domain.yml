@@ -90,7 +90,7 @@ responses:
   utter_specific_praise_others:
     - text: "{others}也太厉害了~"
   utter_praise_robot:
-    - text: "（/ - \）谢谢你，你也是！"
+    - text: "谢谢你，你也是！"
   utter_thank:
     - text: "不用谢~这是我该做的"
     - text: "不用谢啦，我还要不断进步"
