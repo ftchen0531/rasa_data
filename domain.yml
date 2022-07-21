@@ -83,15 +83,6 @@ responses:
   utter_specific_praise_others:
     - text: "{others}也太厉害了~"
 
-  utter_specific_praise_event_verb_adv:
-    - text: "居然{adv}{verb}，太厉害啦！"
-    - text: "恭喜{adv}{verb}！真的做的很棒！"
-  utter_specific_praise_event_verb:
-    - text: "什么？{verb}！太棒了！继续加油！"
-  utter_specific_praise_sth:
-    - text: "{sth}做的真的很好"
-  utter_specific_praise_others:
-    - text: "{others}也太厉害了~"
   utter_praise_robot:
     - text: "谢谢你，你也是！"
   utter_thank:
