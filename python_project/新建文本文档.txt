@@ -1,0 +1,2 @@
+    - text: "{object_others}也太厉害了~"
+    - text: "{object_sth}做的真的很好"
