@@ -3,7 +3,9 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - specific_praise_event
+  - specific_praise_event_verb
+  - specific_praise_event_verb_object
+  - specific_praise_event_verb_adv
   - specific_praise_sth
   - specific_praise_others
   - random_praise
@@ -75,15 +77,15 @@ responses:
     - text: "哇！太厉害啦∠(｀ω′*)"
     - text: "祝你成功呀"
     - text: "我觉得你今天很特别耶，特别可爱。"
-  utter_specific_praise_event/verb_object:
+  utter_specific_praise_event_verb_object:
     - text: "从哪里开始夸你呢，嗯。。。{verb}{object}太棒了！！"
     - text: "{verb}{object}真是太了不起啦！ "
     - text: "哇，{verb}{object}， 我太佩服你了！"
     - text: "哇哇哇哇，做的太棒了吧"
-  utter_specific_praise_event/verb_adv:
+  utter_specific_praise_event_verb_adv:
     - text: "居然{adv}{verb}，太厉害啦！"
     - text: "恭喜{adv}{verb}！真的做的很棒！"
-  utter_specific_praise_event/verb:
+  utter_specific_praise_event_verb:
     - text: "什么？{verb}！太棒了！继续加油！"
   utter_specific_praise_sth:
     - text: "{sth}做的真的很好"
