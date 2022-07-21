@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+
+- story: praise path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: random_praise
+  - action: utter_random_praise
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: praise path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: specific_praise_event
+  - action: utter_specific_praise_event
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: praise path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: specific_praise_sth
+  - action: utter_specific_praise_sth
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: praise path 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: specific_praise_others
+  - action: utter_specific_praise_others
+  - intent: goodbye
+  - action: utter_goodbye
