@@ -15,8 +15,8 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: specific_praise_event_verb_object
-  - action: utter_specific_praise_event_verb_object
+  - intent: specific_praise_event
+  - action: utter_specific_praise_event
   - intent: goodbye
   - action: utter_goodbye
 
