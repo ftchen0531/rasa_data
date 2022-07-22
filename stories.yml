@@ -37,3 +37,56 @@ stories:
   - action: utter_specific_praise_others
   - intent: goodbye
   - action: utter_goodbye
+  
+- story: praise path 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: random_praise
+  - action: utter_random_praise
+  - intent: praise_robot
+  - action: utter_praise_robot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: praise path 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: specific_praise_event
+  - action: utter_specific_praise_event
+  - intent: praise_robot
+  - action: utter_praise_robot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: praise path 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: specific_praise_sth
+  - action: utter_specific_praise_sth
+  - intent: praise_robot
+  - action: utter_praise_robot
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: praise path 8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: specific_praise_others
+  - action: utter_specific_praise_others
+  - intent: praise_robot
+  - action: utter_praise_robot
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: chitchat path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: praise_robot
+  - action: utter_praise_robot
+  - intent: goodbye
+  - action: utter_goodbye
