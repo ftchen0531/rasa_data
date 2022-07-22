@@ -74,10 +74,15 @@ responses:
     - text: "祝你成功呀"
     - text: "我觉得你今天很特别耶，特别可爱。"
   utter_specific_praise_event:
-    - text: "从哪里开始夸你呢，嗯。。。{verb}{object}太棒了！！"
-    - text: "{verb}{object}真是太了不起啦！ "
-    - text: "哇，{verb}{object}， 我太佩服你了！"
+    - condition: 
+        - type: slot
+          name: event_object
+          value: None
+      text: "能够{event_verb}很不错！我也想试试看呢"
     - text: "哇哇哇哇，太棒了吧"
+    - text: "从哪里开始夸你呢，嗯。。。{event_verb}{event_object}太棒了！！"
+    - text: "{event_verb}{event_object}真是太了不起啦！ "
+    - text: "哇，{event_verb}{event_object}， 我太佩服你了！"
   utter_specific_praise_sth:
     - text: "{sth}做的真的很好"
   utter_specific_praise_others:
