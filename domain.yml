@@ -7,6 +7,8 @@ intents:
   - specific_praise_sth
   - specific_praise_others
   - random_praise
+  - praise_robot
+  - thank
 entities:
   - verb
   - object
