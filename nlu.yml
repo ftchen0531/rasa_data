@@ -82,14 +82,10 @@ nlu:
     - 怎么让自己一个人多户外走动，少在家多交流
     - 持续失眠的第三个月
     - 一个朋友都没有
-- intent: praise_chatbot
+- intent: praise_robot
   examples: |
     - 你好棒呀
     - 你很厉害
     - 你真的很不错
     - 你也太棒了吧！
     - 你好聪明
-- intent: thank
-  examples: |
-    - 谢谢
-    - 感谢
