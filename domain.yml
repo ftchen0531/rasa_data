@@ -14,7 +14,8 @@ entities:
   - adv
   - sth
   - others
-
+actions:
+  - action_my_utter_event
 slots:
   event_verb:
     type: text
