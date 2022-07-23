@@ -17,7 +17,8 @@ entities:
 
 slots:
   event_verb:
-    type: any
+    type: text
+    initial_value: "None"
     influence_conversation: false
     mappings:
     - type: from_entity
@@ -25,7 +26,8 @@ slots:
       intent: specific_praise_event
       not applied: random_praise
   event_object:
-    type: any
+    type: text
+    initial_value: "None"
     influence_conversation: false
     mappings:
     - type: from_entity
@@ -33,7 +35,8 @@ slots:
       intent: specific_praise_event
       not applied: random_praise
   event_adv:
-    type: any
+    type: text
+    initial_value: "None"
     influence_conversation: false
     mappings:
     - type: from_entity
@@ -41,7 +44,8 @@ slots:
       intent: specific_praise_event
       not applied: random_praise
   object_sth:
-    type: any
+    type: text
+    initial_value: "None"
     influence_conversation: false
     mappings:
     - type: from_entity
@@ -49,7 +53,8 @@ slots:
       intent: specific_praise_sth
       not applied: random_praise
   object_others:
-    type: any
+    type: text
+    initial_value: "None"
     influence_conversation: false
     mappings:
     - type: from_entity
@@ -78,15 +83,21 @@ responses:
     - condition: 
         - type: slot
           name: event_object
-          value: None
+          value: "None"
       text: "能够{event_verb}很不错！我也想试试看呢"
-    - text: "哇哇哇哇，太棒了吧"
+    
     - text: "从哪里开始夸你呢，嗯。。。{event_verb}{event_object}太棒了！！"
     - text: "{event_verb}{event_object}真是太了不起啦！ "
     - text: "哇，{event_verb}{event_object}， 我太佩服你了！"
   utter_specific_praise_sth:
-    - text: "{sth}做的真的很好"
+    - condition: 
+        - type: slot
+          name: event_sth
+          value: "None"
+      text: "也做的太好了吧！"
+    
+    - text: "{object_sth}做的真的很好"
   utter_specific_praise_others:
-    - text: "{others}也太厉害了~"
+    - text: "{object_others}也太厉害了~"
   utter_praise_robot:
     - text: "谢谢你，你也是！"
