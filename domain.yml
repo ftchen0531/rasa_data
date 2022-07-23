@@ -92,12 +92,18 @@ responses:
   utter_specific_praise_sth:
     - condition: 
         - type: slot
-          name: event_sth
+          name: object_sth
           value: "None"
       text: "也做的太好了吧！"
     
     - text: "{object_sth}做的真的很好"
   utter_specific_praise_others:
+    - condition: 
+        - type: slot
+          name: object_others
+          value: "None"
+      text: "太太太厉害啦！"
+      
     - text: "{object_others}也太厉害了~"
   utter_praise_robot:
     - text: "谢谢你，你也是！"
