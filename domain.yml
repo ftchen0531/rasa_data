@@ -39,6 +39,8 @@ slots:
     type: text
     initial_value: "None"
     influence_conversation: false
+    mappings:
+    - type: custom
   event_adv:
     type: text
     initial_value: "None"
