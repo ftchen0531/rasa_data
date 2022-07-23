@@ -34,6 +34,10 @@ slots:
       entity: object
       intent: specific_praise_event
       not applied: random_praise
+  event_object_old:
+    type: text
+    initial_value: "None"
+    influence_conversation: false
   event_adv:
     type: text
     initial_value: "None"
