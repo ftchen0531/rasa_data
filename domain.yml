@@ -14,8 +14,7 @@ entities:
   - adv
   - sth
   - others
-actions:
-  - action_my_utter_event
+
 slots:
   event_verb:
     type: text
@@ -35,12 +34,6 @@ slots:
       entity: object
       intent: specific_praise_event
       not applied: random_praise
-  event_object_old:
-    type: text
-    initial_value: "None"
-    influence_conversation: false
-    mappings:
-    - type: custom
   event_adv:
     type: text
     initial_value: "None"
@@ -96,6 +89,7 @@ responses:
     - text: "从哪里开始夸你呢，嗯。。。{event_verb}{event_object}太棒了！！"
     - text: "{event_verb}{event_object}真是太了不起啦！ "
     - text: "哇，{event_verb}{event_object}， 我太佩服你了！"
+    - text: "哇哇哇哇，太棒了吧！"
   utter_specific_praise_sth:
     - condition: 
         - type: slot
