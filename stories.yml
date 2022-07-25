@@ -10,6 +10,7 @@ stories:
   - action: utter_random_praise
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
 
 - story: praise path 2
   steps:
@@ -19,6 +20,7 @@ stories:
   - action: utter_specific_praise_event
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
 
 - story: praise path 3
   steps:
@@ -28,6 +30,7 @@ stories:
   - action: utter_specific_praise_sth
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
   
 - story: praise path 4
   steps:
@@ -37,6 +40,7 @@ stories:
   - action: utter_specific_praise_others
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
   
 - story: praise path 5
   steps:
@@ -48,6 +52,7 @@ stories:
   - action: utter_praise_robot
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
 
 - story: praise path 6
   steps:
@@ -59,6 +64,7 @@ stories:
   - action: utter_praise_robot
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
 
 - story: praise path 7
   steps:
@@ -70,6 +76,7 @@ stories:
   - action: utter_praise_robot
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
   
 - story: praise path 8
   steps:
@@ -81,6 +88,7 @@ stories:
   - action: utter_praise_robot
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
   
 - story: chitchat path
   steps:
@@ -90,3 +98,4 @@ stories:
   - action: utter_praise_robot
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_restart
